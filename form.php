@@ -29,7 +29,7 @@ $password = $_POST['password'];
 
 
 mysql_query("INSERT INTO usuario(user, email, password)VALUES('$user','$email','$password')",$connection);
-if(mysql_query){
+if(!mysql_query){
 
 	echo "no realizó el query";
 }else{
